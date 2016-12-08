@@ -10,14 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var moreDetailsButton: UIButton!
     @IBOutlet var segmentedControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        moreDetailsButton.layer.cornerRadius = 5
+        let attr = NSDictionary(object: UIFont(name: "GothamRounded-Bold", size: 15.0)!, forKey: NSFontAttributeName as NSCopying)
+        
+        //Segmented Control Attributes
+        segmentedControl.setTitleTextAttributes(attr as [NSObject : AnyObject] , for: .normal)
+        segmentedControl.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState.selected)
         
         
-        
+        segmentedControl.layer.borderColor = UIColor(red: 218, green: 218, blue: 218, alpha: 1).cgColor //UIColor.gray
+        segmentedControl.layer.borderWidth = 10
         
         
     }
