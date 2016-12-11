@@ -15,6 +15,7 @@
 		473E90101DF7E12500022C72 /* Gotham Rounded Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 473E900F1DF7E12500022C72 /* Gotham Rounded Book.otf */; };
 		473E90121DF7E1E600022C72 /* Gotham Rounded Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 473E90111DF7E1E600022C72 /* Gotham Rounded Bold.otf */; };
 		473E90141DF7E86D00022C72 /* Gotham Rounded Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 473E90131DF7E86D00022C72 /* Gotham Rounded Medium.otf */; };
+		E33792748D9261FEFCDD3681 /* Pods_KineduApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5C3A8BDCC375A5FF5BF9BC /* Pods_KineduApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		473E900F1DF7E12500022C72 /* Gotham Rounded Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Rounded Book.otf"; sourceTree = "<group>"; };
 		473E90111DF7E1E600022C72 /* Gotham Rounded Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Rounded Bold.otf"; sourceTree = "<group>"; };
 		473E90131DF7E86D00022C72 /* Gotham Rounded Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Rounded Medium.otf"; sourceTree = "<group>"; };
+		4D5C3A8BDCC375A5FF5BF9BC /* Pods_KineduApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KineduApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B05D6B241A3B499603F9E39 /* Pods-KineduApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KineduApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KineduApp/Pods-KineduApp.debug.xcconfig"; sourceTree = "<group>"; };
+		ECEBF3116EC90226FE955701 /* Pods-KineduApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KineduApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-KineduApp/Pods-KineduApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E33792748D9261FEFCDD3681 /* Pods_KineduApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4711EB39F2D3FAFD5B9E8BF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D5C3A8BDCC375A5FF5BF9BC /* Pods_KineduApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		473E8FED1DF7CAAB00022C72 = {
 			isa = PBXGroup;
 			children = (
 				473E8FF81DF7CAAC00022C72 /* KineduApp */,
 				473E8FF71DF7CAAC00022C72 /* Products */,
+				C2201943275D75E7F06F3DBE /* Pods */,
+				4711EB39F2D3FAFD5B9E8BF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +88,15 @@
 			path = KineduApp;
 			sourceTree = "<group>";
 		};
+		C2201943275D75E7F06F3DBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B05D6B241A3B499603F9E39 /* Pods-KineduApp.debug.xcconfig */,
+				ECEBF3116EC90226FE955701 /* Pods-KineduApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 473E90081DF7CAAC00022C72 /* Build configuration list for PBXNativeTarget "KineduApp" */;
 			buildPhases = (
+				BBC90A64B8B07E5C051A7744 /* [CP] Check Pods Manifest.lock */,
 				473E8FF21DF7CAAB00022C72 /* Sources */,
 				473E8FF31DF7CAAB00022C72 /* Frameworks */,
 				473E8FF41DF7CAAB00022C72 /* Resources */,
+				C46FB052EF850398EC7436BB /* [CP] Embed Pods Frameworks */,
+				7D31FC39A5F054D3239CE824 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D31FC39A5F054D3239CE824 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KineduApp/Pods-KineduApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBC90A64B8B07E5C051A7744 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C46FB052EF850398EC7436BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KineduApp/Pods-KineduApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		473E8FF21DF7CAAB00022C72 /* Sources */ = {
@@ -269,6 +344,7 @@
 		};
 		473E90091DF7CAAC00022C72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B05D6B241A3B499603F9E39 /* Pods-KineduApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SYGB8AL676;
@@ -282,6 +358,7 @@
 		};
 		473E900A1DF7CAAC00022C72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECEBF3116EC90226FE955701 /* Pods-KineduApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SYGB8AL676;
@@ -312,6 +389,7 @@
 				473E900A1DF7CAAC00022C72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
