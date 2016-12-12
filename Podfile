@@ -8,4 +8,6 @@ target 'KineduApp' do
   # Pods for KineduApp
 
 	pod 'Alamofire', '~> 4.0'
+	pod 'M13ProgressSuite'
+	pod 'SwiftyJSON'
 end

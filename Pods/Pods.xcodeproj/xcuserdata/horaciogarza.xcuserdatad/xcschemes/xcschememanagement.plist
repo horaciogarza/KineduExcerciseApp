@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>M13ProgressSuite.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-KineduApp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E3C62FC083B3D649B404500C4B2D23A4</key>
+		<key>856D9E7FDCBC005B483F7F09BF9F20F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1F631EABB9A6ACAD2D0762A5058A7C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5FE7043DCD5223A6455BE9B2049A92A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

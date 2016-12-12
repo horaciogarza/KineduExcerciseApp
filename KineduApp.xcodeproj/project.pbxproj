@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		473A4D8F1DFD6A1400207DF3 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473A4D8E1DFD6A1400207DF3 /* SwiftyJSON.framework */; };
 		473E8FFA1DF7CAAC00022C72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473E8FF91DF7CAAC00022C72 /* AppDelegate.swift */; };
 		473E8FFC1DF7CAAC00022C72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473E8FFB1DF7CAAC00022C72 /* ViewController.swift */; };
 		473E8FFF1DF7CAAC00022C72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 473E8FFD1DF7CAAC00022C72 /* Main.storyboard */; };
@@ -15,10 +16,12 @@
 		473E90101DF7E12500022C72 /* Gotham Rounded Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 473E900F1DF7E12500022C72 /* Gotham Rounded Book.otf */; };
 		473E90121DF7E1E600022C72 /* Gotham Rounded Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 473E90111DF7E1E600022C72 /* Gotham Rounded Bold.otf */; };
 		473E90141DF7E86D00022C72 /* Gotham Rounded Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 473E90131DF7E86D00022C72 /* Gotham Rounded Medium.otf */; };
+		47EBAFE51DFDC541007B9645 /* NPSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EBAFE41DFDC541007B9645 /* NPSObject.swift */; };
 		E33792748D9261FEFCDD3681 /* Pods_KineduApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5C3A8BDCC375A5FF5BF9BC /* Pods_KineduApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		473A4D8E1DFD6A1400207DF3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/KineduApp-bdwrovkyctexnibvvtoejaiosyuo/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		473E8FF61DF7CAAC00022C72 /* KineduApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KineduApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		473E8FF91DF7CAAC00022C72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		473E8FFB1DF7CAAC00022C72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +32,8 @@
 		473E900F1DF7E12500022C72 /* Gotham Rounded Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Rounded Book.otf"; sourceTree = "<group>"; };
 		473E90111DF7E1E600022C72 /* Gotham Rounded Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Rounded Bold.otf"; sourceTree = "<group>"; };
 		473E90131DF7E86D00022C72 /* Gotham Rounded Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Rounded Medium.otf"; sourceTree = "<group>"; };
+		479D79461DFD07E9000E3351 /* M13ProgressSuite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = M13ProgressSuite.framework; path = "../../Library/Developer/Xcode/DerivedData/KineduApp-bdwrovkyctexnibvvtoejaiosyuo/Build/Products/Debug-iphonesimulator/M13ProgressSuite/M13ProgressSuite.framework"; sourceTree = "<group>"; };
+		47EBAFE41DFDC541007B9645 /* NPSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPSObject.swift; sourceTree = "<group>"; };
 		4D5C3A8BDCC375A5FF5BF9BC /* Pods_KineduApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KineduApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B05D6B241A3B499603F9E39 /* Pods-KineduApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KineduApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KineduApp/Pods-KineduApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ECEBF3116EC90226FE955701 /* Pods-KineduApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KineduApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-KineduApp/Pods-KineduApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -39,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473A4D8F1DFD6A1400207DF3 /* SwiftyJSON.framework in Frameworks */,
 				E33792748D9261FEFCDD3681 /* Pods_KineduApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +55,8 @@
 		4711EB39F2D3FAFD5B9E8BF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				473A4D8E1DFD6A1400207DF3 /* SwiftyJSON.framework */,
+				479D79461DFD07E9000E3351 /* M13ProgressSuite.framework */,
 				4D5C3A8BDCC375A5FF5BF9BC /* Pods_KineduApp.framework */,
 			);
 			name = Frameworks;
@@ -57,6 +65,7 @@
 		473E8FED1DF7CAAB00022C72 = {
 			isa = PBXGroup;
 			children = (
+				47EBAFE41DFDC541007B9645 /* NPSObject.swift */,
 				473E8FF81DF7CAAC00022C72 /* KineduApp */,
 				473E8FF71DF7CAAC00022C72 /* Products */,
 				C2201943275D75E7F06F3DBE /* Pods */,
@@ -133,6 +142,7 @@
 					473E8FF51DF7CAAB00022C72 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = SYGB8AL676;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -224,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47EBAFE51DFDC541007B9645 /* NPSObject.swift in Sources */,
 				473E8FFC1DF7CAAC00022C72 /* ViewController.swift in Sources */,
 				473E8FFA1DF7CAAC00022C72 /* AppDelegate.swift in Sources */,
 			);

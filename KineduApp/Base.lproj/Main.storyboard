@@ -6,6 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -29,105 +32,157 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="d4n-Tw-uj8">
-                                <rect key="frame" x="20" y="37" width="334" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="d4n-Tw-uj8">
+                                <rect key="frame" x="20" y="37" width="335" height="29"/>
                                 <segments>
                                     <segment title="3.2.4"/>
                                     <segment title="3.2.3"/>
                                     <segment title="3.3.2"/>
                                 </segments>
                                 <color key="tintColor" red="0.96078431372549022" green="0.55686274509803924" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentHasChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="2ey-4M-q5t"/>
+                                </connections>
                             </segmentedControl>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 1-1" translatesAutoresizingMaskIntoConstraints="NO" id="7kI-Tz-tkF">
-                                <rect key="frame" x="12" y="96" width="350" height="405"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1-1" translatesAutoresizingMaskIntoConstraints="NO" id="7kI-Tz-tkF">
+                                <rect key="frame" x="12" y="96" width="350" height="406"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7kI-Tz-tkF" secondAttribute="height" multiplier="70:81" id="GBH-A5-8Ly"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="N P S  S C O R E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khs-NC-jbs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N P S  S C O R E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khs-NC-jbs">
                                 <rect key="frame" x="102" y="106" width="171" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Khs-NC-jbs" secondAttribute="height" multiplier="57:7" id="ES0-XB-1tP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="21"/>
                                 <color key="textColor" red="0.6705882352941176" green="0.6705882352941176" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fremium users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geQ-bo-btb">
-                                <rect key="frame" x="108" y="143" width="158" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fremium users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geQ-bo-btb">
+                                <rect key="frame" x="113" y="143" width="149" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="geQ-bo-btb" secondAttribute="height" multiplier="79:9" id="uJT-5B-ONe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="17"/>
                                 <color key="textColor" red="0.14901960784313725" green="0.54509803921568623" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ika-eT-f5k">
-                                <rect key="frame" x="17" y="311" width="340" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ika-eT-f5k">
+                                <rect key="frame" x="12" y="310" width="350" height="1"/>
                                 <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Premium users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cJ-zE-gSq">
-                                <rect key="frame" x="110" y="328" width="155" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Premium users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cJ-zE-gSq">
+                                <rect key="frame" x="124" y="319" width="127" height="17"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="17"/>
                                 <color key="textColor" red="0.14901960780000001" green="0.5450980392" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="-9" translatesAutoresizingMaskIntoConstraints="NO" id="ET3-Wo-I86">
-                                <rect key="frame" x="128" y="382" width="119" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="73" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOr-9a-HzC">
-                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="97.5"/>
-                                        <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="97"/>
-                                        <color key="textColor" red="0.4714122415" green="0.71957498789999996" blue="0.26063656810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Out of 159 users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPY-C7-axA">
-                                        <rect key="frame" x="3" y="88.5" width="112.5" height="14.5"/>
-                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
-                                        <color key="textColor" red="0.36078431370000003" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkG-tQ-qZC">
-                                <rect key="frame" x="41" y="537" width="293" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkG-tQ-qZC">
+                                <rect key="frame" x="41" y="540" width="293" height="46"/>
                                 <color key="backgroundColor" red="0.47141224145889282" green="0.71957498788833618" blue="0.26063656806945801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EkG-tQ-qZC" secondAttribute="height" multiplier="293:46" id="f01-gg-Qjx"/>
+                                    <constraint firstAttribute="height" constant="46" id="rRb-Jf-vz9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="17"/>
                                 <state key="normal" title="See more details">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose app version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOf-Ay-YzB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose app version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOf-Ay-YzB">
                                 <rect key="frame" x="102" y="12" width="171" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="17"/>
                                 <color key="textColor" red="0.6705882352941176" green="0.6705882352941176" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="-9" translatesAutoresizingMaskIntoConstraints="NO" id="ZL1-ZA-c0j">
-                                <rect key="frame" x="118" y="188" width="138" height="103"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-9" translatesAutoresizingMaskIntoConstraints="NO" id="ZL1-ZA-c0j">
+                                <rect key="frame" x="87" y="185" width="200" height="103"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="40" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYp-2C-c7J">
-                                        <rect key="frame" x="0.0" y="0.0" width="138" height="97.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYp-2C-c7J">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="97.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="BWq-EB-NiR"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="97"/>
                                         <color key="textColor" red="0.91764705882352937" green="0.14901960784313725" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Out of 20 users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0o-iZ-ufe">
-                                        <rect key="frame" x="0.0" y="88.5" width="138" height="14.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Out of 20 users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0o-iZ-ufe">
+                                        <rect key="frame" x="0.0" y="88.5" width="200" height="14.5"/>
                                         <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
                                         <color key="textColor" red="0.36078431372549019" green="0.36078431372549019" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="NeJ-N7-glw"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-9" translatesAutoresizingMaskIntoConstraints="NO" id="ET3-Wo-I86">
+                                <rect key="frame" x="87" y="349" width="200" height="102.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="73" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOr-9a-HzC">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="97"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="045-Od-FLF"/>
+                                            <constraint firstAttribute="width" secondItem="mOr-9a-HzC" secondAttribute="height" multiplier="200:97" id="2W9-Oy-G8E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="97"/>
+                                        <color key="textColor" red="0.4714122415" green="0.71957498789999996" blue="0.26063656810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out of 159 users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPY-C7-axA">
+                                        <rect key="frame" x="0.0" y="88" width="200" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tPY-C7-axA" firstAttribute="width" secondItem="mOr-9a-HzC" secondAttribute="width" id="KyI-se-gDA"/>
+                                    <constraint firstAttribute="width" constant="200" id="jKw-2W-wkn"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uYp-2C-c7J" firstAttribute="centerX" secondItem="7kI-Tz-tkF" secondAttribute="centerX" id="0Pr-32-ou0"/>
+                            <constraint firstItem="ET3-Wo-I86" firstAttribute="top" secondItem="4cJ-zE-gSq" secondAttribute="bottom" multiplier="0.87" constant="56.599998474121094" id="18K-2T-ui3"/>
+                            <constraint firstItem="EkG-tQ-qZC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DGC-Ef-sKb"/>
+                            <constraint firstItem="kOf-Ay-YzB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JAy-yK-q68"/>
+                            <constraint firstItem="d4n-Tw-uj8" firstAttribute="top" secondItem="kOf-Ay-YzB" secondAttribute="bottom" constant="8" id="Nle-s5-7BT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EkG-tQ-qZC" secondAttribute="bottom" multiplier="0.995" constant="20" id="RGB-1R-jwx"/>
+                            <constraint firstItem="geQ-bo-btb" firstAttribute="centerX" secondItem="7kI-Tz-tkF" secondAttribute="centerX" id="aKP-KN-KOY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7kI-Tz-tkF" secondAttribute="trailing" constant="-3" id="dPb-Yi-OE0"/>
+                            <constraint firstItem="ika-eT-f5k" firstAttribute="leading" secondItem="7kI-Tz-tkF" secondAttribute="leading" id="efJ-bb-Psd"/>
+                            <constraint firstItem="Khs-NC-jbs" firstAttribute="centerX" secondItem="7kI-Tz-tkF" secondAttribute="centerX" id="exh-ZM-iUR"/>
+                            <constraint firstItem="4cJ-zE-gSq" firstAttribute="centerX" secondItem="7kI-Tz-tkF" secondAttribute="centerX" id="hVo-Am-cFO"/>
+                            <constraint firstItem="kOf-Ay-YzB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="hba-LJ-AkU"/>
+                            <constraint firstItem="7kI-Tz-tkF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="hyC-0a-NWP"/>
+                            <constraint firstItem="ika-eT-f5k" firstAttribute="width" secondItem="7kI-Tz-tkF" secondAttribute="width" id="lPI-ig-jbW"/>
+                            <constraint firstItem="geQ-bo-btb" firstAttribute="top" secondItem="Khs-NC-jbs" secondAttribute="bottom" constant="16" id="lQP-xC-pe9"/>
+                            <constraint firstItem="ZL1-ZA-c0j" firstAttribute="centerX" secondItem="7kI-Tz-tkF" secondAttribute="centerX" id="lry-r4-mwU"/>
+                            <constraint firstItem="ika-eT-f5k" firstAttribute="top" secondItem="ZL1-ZA-c0j" secondAttribute="bottom" constant="22" id="nnU-VH-CQp"/>
+                            <constraint firstItem="7kI-Tz-tkF" firstAttribute="top" secondItem="Khs-NC-jbs" secondAttribute="bottom" constant="-31" id="nqI-R7-VWs"/>
+                            <constraint firstItem="mOr-9a-HzC" firstAttribute="centerX" secondItem="7kI-Tz-tkF" secondAttribute="centerX" id="o6I-hh-kb0"/>
+                            <constraint firstItem="4cJ-zE-gSq" firstAttribute="top" secondItem="ika-eT-f5k" secondAttribute="bottom" constant="8" symbolic="YES" id="oDv-3R-fpk"/>
+                            <constraint firstItem="ika-eT-f5k" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="310" id="p5s-De-Doe"/>
+                            <constraint firstItem="d4n-Tw-uj8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="tGb-OP-d5k"/>
+                            <constraint firstItem="d4n-Tw-uj8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w4N-zR-zqD"/>
+                            <constraint firstItem="ZL1-ZA-c0j" firstAttribute="top" secondItem="geQ-bo-btb" secondAttribute="bottom" constant="25" id="wwX-85-zwe"/>
+                            <constraint firstItem="7kI-Tz-tkF" firstAttribute="top" secondItem="d4n-Tw-uj8" secondAttribute="bottom" constant="31" id="xu0-PO-kGX"/>
+                            <constraint firstItem="4cJ-zE-gSq" firstAttribute="top" secondItem="b0o-iZ-ufe" secondAttribute="bottom" constant="31" id="ztU-rT-sWi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kinedu NPS Score" id="JbS-AC-HiG"/>
                     <connections>
                         <outlet property="moreDetailsButton" destination="EkG-tQ-qZC" id="5On-Oj-Y04"/>
+                        <outlet property="npsFreemium" destination="uYp-2C-c7J" id="oW6-oG-fUH"/>
+                        <outlet property="npsPremium" destination="mOr-9a-HzC" id="u9w-xL-j36"/>
                         <outlet property="segmentedControl" destination="d4n-Tw-uj8" id="Qms-a1-QXB"/>
+                        <outlet property="totalUsersFreeLabel" destination="b0o-iZ-ufe" id="GM5-HC-qnc"/>
+                        <outlet property="totalUsersPremiumLabel" destination="tPY-C7-axA" id="Aw3-BW-ZPY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

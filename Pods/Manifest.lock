@@ -1,12 +1,18 @@
 PODS:
   - Alamofire (4.0.1)
+  - M13ProgressSuite (1.2.9)
+  - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - M13ProgressSuite
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  M13ProgressSuite: ea9f7263e73e9215e6849dfa54e29ee0ad6a145c
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: 3a724b0bb604405bfaca31998a13900162a667c8
+PODFILE CHECKSUM: 01bfa8b420c1b9060ed17b4f76363238cf79503f
 
 COCOAPODS: 1.0.1
